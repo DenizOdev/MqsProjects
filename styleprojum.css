@@ -1,0 +1,102 @@
+.container {
+    max-width: 600px;
+    height: 450px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+label {
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 150px;
+}
+
+input {
+    transition: border 0.3s ease-in;
+    width: 15%;
+    min-width: 10px;
+}
+
+input:hover {
+    border: 2px solid #079cff;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10px; /* Espaço entre os botões e os outros elementos */
+}
+
+.vermelho {
+    background-color: red;
+}
+
+button {
+    cursor: pointer;
+    width: auto;
+    height: 30px;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10%;
+    box-shadow: 2px 4px 5px #121212;
+}
+
+button:hover {
+    border: 2px solid #079cff;
+    animation: borderOscillation 1s infinite alternate;
+    box-shadow: 4px 8px 15px #121212;
+}
+
+@keyframes borderOscillation {
+    from {
+        border-color: #121212;
+        transform: scale(1);
+        color: #121212;
+        box-shadow: 2px 4px 5px #121212;
+    }
+    to {
+        border-color: #079cff;
+        transform: scale(1.2);
+        color: #079cff;
+        box-shadow: 4px 8px 15px #121212;
+    }
+}
+.tabela-container {
+    margin: auto;
+    overflow-x: auto; /* Adicionado para permitir rolagem horizontal se a tabela for larga */
+    padding: 20px;
+    max-width: 700px;
+}
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    border: 1px solid #474747;
+    margin-top: 20px;
+    background-color: #D3D3D3;
+    box-shadow: 4px 6px 12px #3d3d3d;
+}
+
+th,
+td {
+    border: 1px solid #ADADAD;
+    padding: 8px;
+    text-align: center;
+    background-color: #D3D3D3;
+}
+
+th {
+    background-color: #F5F5F5;
+}

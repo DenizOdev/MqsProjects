@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleprojum.css">
+    <title>Contador de Horas Extras</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Horas Extras</h1>
+
+        <div class="input-container">
+            <label for="horaEntradaExpediente">Entrada do Expediente:</label>
+            <input type="time" id="horaEntradaExpediente">
+        </div>
+
+        <div class="input-container">
+            <label for="horaEntradaIntervalo">Entrada do Intervalo:</label>
+            <input type="time" id="horaEntradaIntervalo">
+        </div>
+
+        <div class="input-container">
+            <label for="horaSaidaIntervalo">Saída do Intervalo:</label>
+            <input type="time" id="horaSaidaIntervalo">
+        </div>
+
+        <div class="input-container">
+            <label for="horaSaidaExpediente">Saída do Expediente:</label>
+            <input type="time" id="horaSaidaExpediente">
+        </div>
+
+        <div class="botao-container">
+            <button onclick="registrarExpediente()">Registrar</button>
+            <button onclick="definirPadrao()">Definir Padrão</button>
+            <button onclick="inserirPadrao()">Inserir Padrão</button>
+            <button onclick="resetValores()">Reset</button>
+            <button onclick="definirHorariosPadraoMarquise()">Padrão Marquise</button>
+        </div>
+
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Adicione a tabela abaixo dos outros elementos -->
+    <div class="tabela-container">
+        <table id="tabelaExpediente">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Entrada Expediente</th>
+                    <th>Entrada Intervalo</th>
+                    <th>Saída Intervalo</th>
+                    <th>Saída Expediente</th>
+                    <th>Horas Trabalhadas</th>
+                    <th>Horas Extras/Atraso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui serão adicionadas as entradas da tabela -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="scriptprojum.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
